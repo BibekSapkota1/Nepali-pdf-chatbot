@@ -1,97 +1,98 @@
-## Nepali PDF Chatbot
+# Nepali PDF Chatbot
 
-Overview
+## Overview
 
-The Nepali PDF Chatbot is a Streamlit-based application that allows users to upload a PDF (written in Nepali), ask questions in English, and receive responses in either English or Nepali. The system extracts text from the PDF, processes it into embeddings using FAISS and HuggingFace, and leverages Google's Gemini AI model for intelligent responses.
+The **Nepali PDF Chatbot** is a Streamlit-based application that allows users to:
+- Upload a PDF (written in Nepali).
+- Ask questions in **English** and receive responses in **English or Nepali**.
+- Extract text from the PDF and process it into embeddings using **FAISS** and **HuggingFace**.
+- Leverage **Google's Gemini AI model** for intelligent responses.
 
-Features
+---
 
-📂 Upload Nepali PDF: Extract text from a PDF document.
+## Features
 
-🔍 Semantic Search: Uses FAISS for efficient similarity-based retrieval.
+- 📂 **Upload Nepali PDF** – Extract text from a PDF document.
+- 🔍 **Semantic Search** – Uses FAISS for efficient similarity-based retrieval.
+- 🔤 **Multilingual Support** – Accepts queries in **English** and provides responses in **English or Nepali**.
+- ⚡ **Fast Response** – Utilizes **Gemini AI** for generating responses.
+- 🛠️ **Robust Text Processing** – Handles text cleaning, chunking, and embedding generation.
 
-🔤 Multilingual Support: Accepts queries in English and provides responses in either English or Nepali.
+---
 
-⚡ Fast Response: Utilizes Gemini AI for generating responses.
+## Technologies Used
 
-🛠️ Robust Text Processing: Handles text cleaning, chunking, and embedding generation.
+The chatbot utilizes the following technologies:
 
-Technologies Used
+1. **Python**
+2. **Streamlit** – For UI
+3. **PyPDF2** – For PDF text extraction
+4. **LangChain** – For text chunking and retrieval
+5. **FAISS** – For vector storage
+6. **HuggingFace Embeddings** – For text similarity search
+7. **Deep Translator** – For language translation using **Google Translator API**
+8. **Google Gemini API** – For AI-generated responses
 
-Python
+---
 
-Streamlit (for UI)
+## Installation
 
-PyPDF2 (for PDF text extraction)
+### Prerequisites
 
-LangChain (for text chunking and retrieval)
+Ensure you have the following installed:
 
-FAISS (for vector storage)
+- **Python 3.8+**
+- **Pip**
+- **Virtual environment** (optional but recommended)
 
-HuggingFace Embeddings (for text similarity search)
+### Setup
 
-Deep Translator (for language translation)
+#### Clone the Repository
 
-Google Gemini API (for AI-generated responses)
+-   git clone https://github.com/BibekSapkota1/Nepali-Pdf-chatbot.git
+-   cd nepali-pdf-chatbot
+#### Create and Activate a Virtual Environment
 
-Installation
+ -  python -m venv venv  # Create virtual environment
+ -  source venv/bin/activate  # Activate on macOS/Linux
+ -  venv\Scripts\activate  # Activate on Windows
 
-Prerequisites
+#### Install Dependencies
 
-Python 3.8+
+ -  pip install -r requirements.txt
 
-Pip
+#### Set Up Environment Variables
 
-Virtual environment (optional but recommended)
-
-Setup
-
-Clone the Repository
-
-   git clone https://github.com/BibekSapkota1/Nepali-PDF-chatbot.git
-   cd nepali-pdf-chatbot
-
-Create and Activate a Virtual Environment
-
-   python -m venv venv  # Create virtual environment
-   source venv/bin/activate  # Activate on macOS/Linux
-   venv\Scripts\activate  # Activate on Windows
-
-Install Dependencies
-
-   pip install -r requirements.txt
-
-Set Up Environment Variables
 Create a .env file in the project directory and add:
 
    GEMINI_API_KEY=your_gemini_api_key_here
 
-Usage
+#### Usage
 
 Run the Streamlit App
 
-   streamlit run chatbot.py
+   - streamlit run chatbot.py
 
-Upload a Nepali PDF in the sidebar.
+- Upload a Nepali PDF in the sidebar.
 
-Ask Questions about the document.
+- Ask Questions about the document.
 
-View Responses in English or Nepali.
+- View Responses in English or Nepali.
 
-File Structure
+### File Structure
 
 📂 nepali-pdf-chatbot
 │-- 📄 chatbot.py             # Main Streamlit app
 │-- 📄 requirements.txt   # List of dependencies
 │-- 📄 .env               # API key configuration
 
-Troubleshooting
+### Troubleshooting
 
 If the chatbot does not initialize, ensure your GEMINI_API_KEY is correctly set in .env.
 
 If translation fails, Google Translator API might be overloaded. Retry after some time.
 
-Future Improvements
+### Future Improvements
 
 Add support for multiple PDF uploads.
 
