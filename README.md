@@ -30,7 +30,7 @@ The chatbot utilizes the following technologies:
 4. **LangChain** – For text chunking and retrieval
 5. **FAISS** – For vector storage
 6. **HuggingFace Embeddings** – For text similarity search
-7. **Deep Translator** – For language translation using **Google Translator API**
+7. **Deep Translator** – For language translation using **Google Translator**
 8. **Google Gemini API** – For AI-generated responses
 
 ---
