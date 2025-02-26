@@ -101,6 +101,6 @@ Implement more advanced NLP models for better question-answering.
 Optimize embeddings for faster search performance.
 
 
-Author
-Bibek Sapkota
+# Author
+# Bibek Sapkota
 
