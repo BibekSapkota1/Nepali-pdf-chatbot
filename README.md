@@ -81,10 +81,11 @@ Run the Streamlit App
 
 ### File Structure
 
-📂 nepali-pdf-chatbot //
-│-- 📄 chatbot.py             # Main Streamlit app //
-│-- 📄 requirements.txt   # List of dependencies //
-│-- 📄 .env               # API key configuration //
+📂 nepali-pdf-chatbot  
+│-- 📄 chatbot.py  # Main Streamlit app  
+│-- 📄 requirements.txt  # List of dependencies  
+│-- 📄 .env  # API key configuration  
+
 
 ### Troubleshooting
 
