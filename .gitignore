@@ -1,0 +1,36 @@
+# Virtual Environment
+pdf_chatbot_env/
+venv/
+env/
+
+# Python Bytecode Files
+__pycache__/
+*.py[cod]
+*.so
+
+# Environment Variables
+.env
+*.env
+
+# OS & Editor Files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+
+# Logs & Debugging Files
+logs/
+*.log
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Python Package Files
+*.egg-info/
+dist/
+build/
+
+# Cache Files
+*.cache
