@@ -50,7 +50,7 @@ Ensure you have the following installed:
 #### Clone the Repository
 
 -   git clone https://github.com/BibekSapkota1/Nepali-Pdf-chatbot.git
--   cd nepali-pdf-chatbot
+- cd nepali-pdf-chatbot ( to get inside the folder )
 #### Create and Activate a Virtual Environment
 
  -  python -m venv venv  # Create virtual environment
