@@ -74,7 +74,7 @@ def extract_text_from_pdf(pdf_file):
         return None
 
 
-def chunk_text(text: str, chunk_size: int = 1000, chunk_overlap: int = 200) -> List[str]:
+def chunk_text(text: str, chunk_size: int = 5000, chunk_overlap: int = 200) -> List[str]:
     """Split text into overlapping chunks."""
     try:
         splitter = RecursiveCharacterTextSplitter(
@@ -105,6 +105,8 @@ def create_embeddings(chunks: List[str]):
     except Exception as e:
         st.error(f"Error creating embeddings: {str(e)}")
         return None
+ 
+
 #--------------------------------------------------------------------------------
 # This is right code
 def safe_translate(text: str, dest_lang: str, retries: int = 3) -> str:
